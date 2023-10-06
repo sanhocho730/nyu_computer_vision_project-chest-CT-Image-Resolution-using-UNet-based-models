@@ -2,7 +2,8 @@
 
 ## Option 1. Demosaic vs Mosaic
 
-Demosaic - what's the best filter/algorithm to recover its original pixel
+Demosaic - find the best filter/algorithm to recover its original pixel
+Mosaic - detect a credential information and apply mosaic
 
 ## Option 2. Denoise Blurry Image
 
