@@ -1,10 +1,9 @@
 # Proposal 
 
-## Option 1. Demosaic vs Mosaic
+## Option 1. Demosaic (Denoise Blurry Image)
 
-- Demosaic - find the best filter/algorithm to recover its original pixel
-- Mosaic - detect a credential information and apply mosaic
+Find the best filter/algorithm to recover its original pixel
 
-## Option 2. Denoise Blurry Image
+## Option 2. Mosaic
 
-Denoise blurry image and sharpen edges
+Detect a credential information and apply mosaic (image classification + mosaic)
