@@ -1,3 +1,5 @@
+Google: https://docs.google.com/document/d/1IbzuuTrePpYCQPSlYqrQpSFfYnJUi14QLaCosYA-NFA/edit?usp=sharing
+
 - RUNet:
   - https://ieeexplore.ieee.org/document/9025499
   - https://github.com/cerniello/Super_Resolution_DNN
