@@ -1,9 +1,6 @@
-# Proposal 
-
-## Option 1. Demosaic (Denoise Blurry Image)
-
-Find the best filter/algorithm to recover its original pixel
-
-## Option 2. Mosaic
-
-Detect a credential information and apply mosaic (image classification + mosaic)
+- RUNet:
+  - https://ieeexplore.ieee.org/document/9025499
+  - https://github.com/cerniello/Super_Resolution_DNN
+- Diffusion-model based Unet:
+  - https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9887996
+  - https://github.com/Janspiry/Image-Super-Resolution-via-Iterative-Refinement
