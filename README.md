@@ -18,3 +18,6 @@ Google: https://docs.google.com/document/d/1IbzuuTrePpYCQPSlYqrQpSFfYnJUi14QLaCo
 - Diffusion-model based Unet:
   - https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9887996
   - https://github.com/Janspiry/Image-Super-Resolution-via-Iterative-Refinement
+ 
+- Dataset
+  - https://www.kaggle.com/datasets/mohamedhanyyy/chest-ctscan-images
