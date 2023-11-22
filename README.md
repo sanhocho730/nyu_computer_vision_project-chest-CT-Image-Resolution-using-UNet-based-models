@@ -13,6 +13,7 @@ Google: https://docs.google.com/document/d/1IbzuuTrePpYCQPSlYqrQpSFfYnJUi14QLaCo
 - RUNet:
   - https://ieeexplore.ieee.org/document/9025499
   - https://github.com/cerniello/Super_Resolution_DNN
+  - https://github.com/qspinat/Super_Resolution_DL2020/tree/main
 - Diffusion-model based Unet:
   - https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9887996
   - https://github.com/Janspiry/Image-Super-Resolution-via-Iterative-Refinement
