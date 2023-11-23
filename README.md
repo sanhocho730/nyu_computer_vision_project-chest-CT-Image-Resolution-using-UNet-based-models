@@ -5,7 +5,7 @@
 ## Group
 
 ## Topic
-
+Super resolution 
 ## References
 
 Google: https://docs.google.com/document/d/1IbzuuTrePpYCQPSlYqrQpSFfYnJUi14QLaCosYA-NFA/edit?usp=sharing
@@ -21,3 +21,4 @@ Google: https://docs.google.com/document/d/1IbzuuTrePpYCQPSlYqrQpSFfYnJUi14QLaCo
  
 - Dataset
   - https://www.kaggle.com/datasets/mohamedhanyyy/chest-ctscan-images
+
