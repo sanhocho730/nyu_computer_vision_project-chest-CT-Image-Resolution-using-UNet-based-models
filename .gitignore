@@ -1,0 +1,8 @@
+.DS_Store
+
+# Settings for IntelliJ
+.idea/
+
+# Compiled pyc files
+__pycache__/
+.vscode/
