@@ -2,7 +2,7 @@ import torchvision.models as models
 import torch
 
 class VGGPerceptualLoss(torch.nn.Module):
-    def __init__(self, device=torch.device("cuda:0" if torch.cuda.is_available() else "cpu")):
+    def __init__(self, resize=True, device=torch.device("cuda:0" if torch.cuda.is_available() else "cpu")):
         super(VGGPerceptualLoss, self).__init__()
         blocks = []
         blocks.append(models.vgg16(pretrained=True).features[:4].to(device).eval())
@@ -13,7 +13,6 @@ class VGGPerceptualLoss(torch.nn.Module):
             for p in bl:
                 p.requires_grad = False
         self.blocks = torch.nn.ModuleList(blocks)
-        self.device=device
 
     def forward(self, input, target):
         loss = 0.0
@@ -24,7 +23,6 @@ class VGGPerceptualLoss(torch.nn.Module):
             y = block(y)
             loss = loss + torch.nn.MSELoss()(x, y)
         return loss
-
 
 def PSNR(Img_pred, Img_true):
     return 10 * torch.log10(torch.max(Img_pred)**2 / torch.nn.MSELoss()(Img_pred,Img_true))
