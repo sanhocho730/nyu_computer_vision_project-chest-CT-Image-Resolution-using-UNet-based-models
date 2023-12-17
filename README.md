@@ -2,7 +2,7 @@
 
 [![RUNet + Nearest Neighbor Interpolation](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1iTo2UUpZnY_7615L7OSh-wpJfVARgrS1?usp=sharing) RUNet 
 
-[![UNet + Diffusion](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1iTo2UUpZnY_7615L7OSh-wpJfVARgrS1?usp=sharing) UNet
+[![UNet + Diffusion](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1YxEbsvwQTZc4C37GY-X973pa38OehlFU) UNet
 
 ## Group
 
