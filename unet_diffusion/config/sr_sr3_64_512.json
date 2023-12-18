@@ -13,7 +13,7 @@
         "train": {
             "name": "CTScan",
             "mode": "HR", 
-            "dataroot": "/content/ProcessedDataset/train",
+            "dataroot": "/content/ProcessedDataset/train/_64_512",
             "datatype": "img", 
             "l_resolution": 64, 
             "r_resolution": 512,
@@ -25,7 +25,7 @@
         "val": {
             "name": "CTScan",
             "mode": "LRHR",
-            "dataroot": "/content/ProcessedDataset/train",
+            "dataroot": "/content/ProcessedDataset/train/_64_512",
             "datatype": "img",
             "l_resolution": 64,
             "r_resolution": 512,
