@@ -240,26 +240,6 @@ if __name__ == "__main__":
         avg_psnr = avg_psnr / idx
         avg_ssim = avg_ssim / idx
 
-        for i, (lr, sr, hr) in enumerate(display_images):
-
-          plt.figure(figsize=(12, 4))
-          plt.subplot(1, 3, 1)
-          plt.imshow(lr)
-          plt.title("Low Resolution")
-          plt.axis('off')
-
-          plt.subplot(1, 3, 2)
-          plt.imshow(sr)
-          plt.title("Super Resolved")
-          plt.axis('off')
-
-          plt.subplot(1, 3, 3)
-          plt.imshow(hr)
-          plt.title("High Resolution")
-          plt.axis('off')
-
-          plt.suptitle(f"Image {i+1}")
-          plt.show()
 
         # log
         logger.info('# Validation # PSNR: {:.4e}'.format(avg_psnr))
