@@ -1,9 +1,10 @@
 from io import BytesIO
 import lmdb
-from PIL import Image
+from PIL import Image, UnidentifiedImageError
 from torch.utils.data import Dataset
 import random
 import data.util as Util
+import os
 
 
 class LRHRDataset(Dataset):
@@ -85,15 +86,29 @@ class LRHRDataset(Dataset):
                 if self.need_LR:
                     img_LR = Image.open(BytesIO(lr_img_bytes)).convert("RGB")
         else:
-            img_HR = Image.open(self.hr_path[index]).convert("RGB")
-            img_SR = Image.open(self.sr_path[index]).convert("RGB")
-            if self.need_LR:
-                img_LR = Image.open(self.lr_path[index]).convert("RGB")
-        if self.need_LR:
-            [img_LR, img_SR, img_HR] = Util.transform_augment(
-                [img_LR, img_SR, img_HR], split=self.split, min_max=(-1, 1))
-            return {'LR': img_LR, 'HR': img_HR, 'SR': img_SR, 'Index': index}
-        else:
-            [img_SR, img_HR] = Util.transform_augment(
-                [img_SR, img_HR], split=self.split, min_max=(-1, 1))
-            return {'HR': img_HR, 'SR': img_SR, 'Index': index}
+          try:
+              img_HR = Image.open(self.hr_path[index]).convert("RGB")
+              img_SR = Image.open(self.sr_path[index]).convert("RGB")
+              if self.need_LR:
+                  img_LR = Image.open(self.lr_path[index]).convert("RGB")
+              if self.need_LR:
+                  [img_LR, img_SR, img_HR] = Util.transform_augment(
+                      [img_LR, img_SR, img_HR], split=self.split, min_max=(-1, 1))
+                  return {'LR': img_LR, 'HR': img_HR, 'SR': img_SR, 'Index': index}
+              else:
+                  [img_SR, img_HR] = Util.transform_augment(
+                      [img_SR, img_HR], split=self.split, min_max=(-1, 1))
+                  return {'HR': img_HR, 'SR': img_SR, 'Index': index}
+
+          except (IOError, PIL.UnidentifiedImageError) as e:
+            
+            print(f"Error occurred with image {self.sr_path[index]}: {e}")
+            # Optionally delete the problematic file
+            os.remove(self.sr_path[index])
+            print(f"Deleted image {self.sr_path[index]} due to loading error.")
+            # Handle the exception (e.g., skip this index, return a blank image, etc.)
+            # ... [your exception handling code]
+
+            # Example: Return a blank image (or handle differently as per your need)
+            blank_image = Image.new('RGB', (desired_width, desired_height), color = (0, 0, 0))
+            return {'HR': blank_image, 'SR': blank_image, 'Index': index}

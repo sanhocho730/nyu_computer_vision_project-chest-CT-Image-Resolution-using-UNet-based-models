@@ -231,6 +231,8 @@ if __name__ == "__main__":
             eval_psnr = Metrics.calculate_psnr(Metrics.tensor2img(visuals['SR'][-1]), hr_img)
             eval_ssim = Metrics.calculate_ssim(Metrics.tensor2img(visuals['SR'][-1]), hr_img)
 
+            logger.info(f'Image PSNR: {eval_psnr:.4e}, SSIM: {eval_ssim :.4e}')
+
             avg_psnr += eval_psnr
             avg_ssim += eval_ssim
 
