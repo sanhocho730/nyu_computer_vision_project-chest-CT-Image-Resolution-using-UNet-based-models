@@ -11,7 +11,7 @@
     },
     "datasets": {
         "train": {
-            "name": "CTScan",
+            "name": "FFHQ",
             "mode": "HR", 
             "dataroot": "/content/CTScan_dataset_preprocessed/train",
             "datatype": "img", 
@@ -23,7 +23,7 @@
             "data_len": -1 
         },
         "val": {
-            "name": "CTScan",
+            "name": "CelebaHQ",
             "mode": "LRHR",
             "dataroot": "/content/CTScan_dataset_preprocessed/test",
             "datatype": "img",
