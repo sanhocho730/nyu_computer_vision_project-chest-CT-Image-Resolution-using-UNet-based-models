@@ -67,7 +67,6 @@ class DDPM(BaseModel):
                 self.SR = self.netG.module.super_resolution(
                     self.data['SR'], continous)
             else:
-                print('I am in a debugginr process')
                 self.SR = self.netG.super_resolution(
                     self.data['SR'], continous)
         
