@@ -1,6 +1,6 @@
 # Computer Vision Final Project 
 
-[![RUNet + Nearest Neighbor Interpolation](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1iTo2UUpZnY_7615L7OSh-wpJfVARgrS1?usp=sharing) RUNet 
+[![RUNet + Nearest Neighbor Interpolation](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1aeLRUg1-yrTUriCpR0OnmdqrJQ7h5x70?usp=sharing) RUNet 
 
 [![UNet + Diffusion](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1YxEbsvwQTZc4C37GY-X973pa38OehlFU) UNet
 
