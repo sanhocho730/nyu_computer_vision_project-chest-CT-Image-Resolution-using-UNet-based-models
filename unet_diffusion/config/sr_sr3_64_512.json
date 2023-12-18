@@ -11,7 +11,7 @@
     },
     "datasets": {
         "train": {
-            "name": "FFHQ",
+            "name": "CTScan",
             "mode": "HR", 
             "dataroot": "/content/CTScan_dataset_preprocessed/train",
             "datatype": "img", 
@@ -23,7 +23,7 @@
             "data_len": -1 
         },
         "val": {
-            "name": "CelebaHQ",
+            "name": "CTScan",
             "mode": "LRHR",
             "dataroot": "/content/CTScan_dataset_preprocessed/test",
             "datatype": "img",
@@ -62,7 +62,7 @@
             },
             "val": {
                 "schedule": "linear",
-                "n_timestep": 1000,
+                "n_timestep": 2000,
                 "linear_start": 1e-6,
                 "linear_end": 1e-2
             }
@@ -74,7 +74,7 @@
         }
     },
     "train": {
-        "n_iter": 830050,
+        "n_iter": 840000,
         "val_freq": 1e4,
         "save_checkpoint_freq": 1e4,
         "print_freq": 50,
