@@ -2,7 +2,7 @@
 
 [![RUNet + Nearest Neighbor Interpolation](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1aeLRUg1-yrTUriCpR0OnmdqrJQ7h5x70?usp=sharing) RUNet 
 
-[![UNet + Diffusion](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1YxEbsvwQTZc4C37GY-X973pa38OehlFU) UNet
+[![UNet + Diffusion](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1YxEbsvwQTZc4C37GY-X973pa38OehlFU) UNet-based diffusion
 
 ## Group
 
@@ -12,4 +12,4 @@
 
 ## Topic
 
-Super resolution
+Enhancing chest CT Image Resolution using UNet-based models
