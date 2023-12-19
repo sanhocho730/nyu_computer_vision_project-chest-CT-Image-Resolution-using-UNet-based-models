@@ -61,8 +61,5 @@ if __name__ == "__main__":
         print(f"HR Image: {rname}")
         print(f"SR Image: {fname}")
         print(f"INF Image: {iname}")
-        display_image_subplot(rname, "High Resolution", 1, 3)
-        display_image_subplot(iname, "inf Resolved", 2, 3)
-        display_image_subplot(fname, "Super Resolved", 3, 3)
 
 
